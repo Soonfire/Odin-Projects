@@ -1,0 +1,17 @@
+* {
+    background-color: #fcfa84;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.fpig {
+    background-image: url("../images/fpig.gif");
+    background-size:cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    position:absolute;
+}
