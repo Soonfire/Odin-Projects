@@ -2,26 +2,28 @@
 
 const createItem = () => {
     const div = document.createElement('div');
-    const posX = Math.floor(Math.random() * (innerWidth - 200))
-    const posY = Math.floor(Math.random() * (innerHeight - 200))
+    posX = (Math.floor(Math.random() * (innerWidth - 200))) + 'px'
+    posY = (Math.floor(Math.random() * (innerHeight - 200))) + 'px'
     div.classList.add('fpig');
-    div.style.left = posX + 'px';
-    div.style.top = posY + 'px';
+    div.style.left = posX;
+    div.style.top = posY;
     return div
+    
 }
-
+console.log(createItem())
 const container = document.querySelector(".container");
     for (let i = 0; i < 7; i++) {
-    container.appendChild(createItem());
+        container.appendChild(createItem());
     }
+
 const nodeList = document.getElementsByClassName("fpig")
 const nodeArray = [...nodeList]
 
 const followCursor = (e) => {
-    e.target.style.left = e.clientX + "px"
-    e.target.style.top = e.clientY + "px"
+    e.target.style.left = (e.clientX - 53) + "px"
+    e.target.style.top = (e.clientY - 53) + "px"
     e.stopPropagation()
-    console.log(e.target)
+    
 }
 
 const joinSnake = () => {
@@ -30,7 +32,7 @@ const joinSnake = () => {
     }
 }
 
-window.addEventListener('load', joinSnake)
+window.addEventListener('mouseover', joinSnake)
 
 /* pseudocode:
     when mouseover the target, add mousemove to the target and move the target with cursor.
