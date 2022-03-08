@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 50px 4px;
+}
+
+p {
+    background-color: beige;
+    padding: 20px;
+    margin: 6px 30% 0 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.scores {
+    background-color: beige;
+    padding-bottom: 20px;
+    margin: 0 30% 0 30%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.winner {
+    margin: 30px 34% ;
+    opacity: 60%;
+    background: linear-gradient(to left ,rgb(22, 208, 214), rgb(194, 194, 194));
+    border-radius: 8px;
+}
