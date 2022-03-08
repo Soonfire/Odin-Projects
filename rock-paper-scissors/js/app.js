@@ -26,7 +26,7 @@ btn.addEventListener('click', function gameEngine() {
                 element.style.pointerEvents = "none"                
             });
         }
-    })
+})
 
 const btn1 = document.createElement('button')
 document.body.appendChild(btn1)
@@ -55,7 +55,7 @@ btn1.addEventListener('click', function gameEngine() {
                 element.style.pointerEvents = "none"                
             });
         }
-    })
+})
 
 const btn2 = document.createElement('button')
 document.body.appendChild(btn2)
@@ -84,7 +84,7 @@ btn2.addEventListener('click', function gameEngine() {
                 element.style.pointerEvents = "none"                
             });
         }
-    })
+})
 
 const div = document.createElement('div')
 document.body.appendChild(div)
